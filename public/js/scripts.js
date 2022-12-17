@@ -2112,13 +2112,13 @@ function setTimelapse() {
   //Reference to the Start Cycle button
   const timelapseButton = document.querySelector('#timelapseButton')
   //Button press event listener, calls 'StartTimelapse'
-  timelapseButton.onclick = function () { startTimelapse }
+  timelapseButton.onclick = function () { startTimelapse() }
   timelapseButton.style.backgroundColor = "gainsboro"
 
   //Reference to the Stop Cycle button
   const stopTimelapseButton = document.querySelector('#stopTimelapseButton')
   //Button press event listener, calls 'StopTimelapse'
-  stopTimelapseButton.onclick = function () { stopTimelapse }
+  stopTimelapseButton.onclick = function () { stopTimelapse() }
   stopTimelapseButton.style.backgroundColor = "grey"
   //Disables the button by default
   stopTimelapseButton.disabled = true
